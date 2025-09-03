@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lead Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Lead Submission Form</h1>
+    <form id="leadForm">
+      <!-- Caller ID -->
+      <label>Phone Number *</label>
+      <input type="tel" name="caller_id" required placeholder="+17194451111" />
+
+      <!-- First Name -->
+      <label>First Name *</label>
+      <input type="text" name="first_name" required />
+
+      <!-- Last Name -->
+      <label>Last Name *</label>
+      <input type="text" name="last_name" required />
+
+      <!-- Email -->
+      <label>Email *</label>
+      <input type="email" name="email" required />
+
+      <!-- Address -->
+      <label>Address *</label>
+      <input type="text" name="address" required />
+
+      <label>Address 2</label>
+      <input type="text" name="address2" />
+
+      <label>City *</label>
+      <input type="text" name="city" required />
+
+      <!-- State Dropdown -->
+      <label>State *</label>
+      <select name="state" required>
+        <option value="">Select State</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="DC">District Of Columbia</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <option value="ID">Idaho</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="IA">Iowa</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="ME">Maine</option>
+        <option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MI">Michigan</option>
+        <option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option>
+        <option value="MO">Missouri</option>
+        <option value="MT">Montana</option>
+        <option value="NE">Nebraska</option>
+        <option value="NV">Nevada</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NM">New Mexico</option>
+        <option value="NY">New York</option>
+        <option value="NC">North Carolina</option>
+        <option value="ND">North Dakota</option>
+        <option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option>
+        <option value="OR">Oregon</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option>
+        <option value="TX">Texas</option>
+        <option value="UT">Utah</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WA">Washington</option>
+        <option value="WV">West Virginia</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WY">Wyoming</option>
+      </select>
+
+      <label>Zip Code *</label>
+      <input type="text" name="zip" required />
+
+      <label>Alternate Phone</label>
+      <input type="tel" name="alternate_phone" placeholder="Only numbers" />
+
+      <!-- DOB -->
+      <label>Date of Birth *</label>
+      <input type="date" name="dob" required />
+
+      <!-- Accident Type Dropdown -->
+      <label>Accident Type *</label>
+      <select name="accident_type" required>
+        <option value="">Select</option>
+        <option value="motor_vehicle_accident">Motor Vehicle Accident</option>
+        <option value="personal_injury">Personal Injury</option>
+        <option value="workers_compensation">Workers Compensation</option>
+        <option value="bankruptcy">Bankruptcy</option>
+      </select>
+
+      <!-- Yes/No Questions -->
+      <label>Already Represented? *</label>
+      <div class="radio-group">
+        <input type="radio" name="currently_represented" value="yes" required /> Yes
+        <input type="radio" name="currently_represented" value="no" required /> No
+      </div>
+
+      <label>Need an Attorney? *</label>
+      <div class="radio-group">
+        <input type="radio" name="needs_attorney" value="yes" required /> Yes
+        <input type="radio" name="needs_attorney" value="no" required /> No
+      </div>
+
+      <label>Person at Fault *</label>
+      <div class="radio-group">
+        <input type="radio" name="person_at_fault" value="self" required /> Self
+        <input type="radio" name="person_at_fault" value="other" required /> Other
+      </div>
+
+      <label>Hospitalized/Treated? *</label>
+      <div class="radio-group">
+        <input type="radio" name="hospitalized_or_treated" value="yes" required /> Yes
+        <input type="radio" name="hospitalized_or_treated" value="no" required /> No
+      </div>
+
+      <label>Accident in Last 2 Years? *</label>
+      <div class="radio-group">
+        <input type="radio" name="auto_accident_in_past_2_years" value="yes" required /> Yes
+        <input type="radio" name="auto_accident_in_past_2_years" value="no" required /> No
+      </div>
+
+      <!-- Injury description -->
+      <label>Injury Description *</label>
+      <input type="text" name="sustain_an_injury" required />
+
+      <!-- Case Description -->
+      <label>Case Description *</label>
+      <textarea name="case_description" required></textarea>
+
+      <!-- Dates -->
+      <label>Date of Injury *</label>
+      <input type="date" name="date_injured" required />
+
+      <label>Incident Date *</label>
+      <input type="date" name="incident_date" required />
+
+      <!-- URLs -->
+      <label>Source URL *</label>
+      <input type="url" name="source_url" required />
+
+      <label>Landing Page URL *</label>
+      <input type="url" name="landing_page_url" required />
+
+      <label>Trusted Form Cert URL *</label>
+      <input type="url" name="trusted_form_cert_url" required />
+
+      <!-- Submit -->
+      <button type="submit">Submit Lead</button>
+    </form>
+
+    <div id="responseMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

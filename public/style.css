@@ -82,3 +82,21 @@ button:hover {
   color: #a00;
   background: #fde8e8;
 }
+#responseMessage {
+  margin-top: 20px;
+  padding: 12px;
+  font-family: monospace;
+  white-space: pre-wrap; /* keeps formatting */
+  word-break: break-word;
+  border-radius: 6px;
+}
+
+#responseMessage.success {
+  color: #0a0;
+  background: #e8fce8;
+}
+
+#responseMessage.error {
+  color: #a00;
+  background: #fde8e8;
+}
